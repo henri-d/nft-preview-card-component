@@ -1,0 +1,172 @@
+:root {
+  --very-dark-blue-main-bg: #0d192c;
+  --very-dark-blue-card-bg: #15263f;
+  --cyan: #00fff8;
+  --soft-blue: #8bacd9;
+  --very-dark-blue-line: #2e405a;
+  --cyan-50-3-transparency: #00fff880;
+}
+
+.section {
+  background-color: var(--very-dark-blue-main-bg);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  overflow: clip;
+}
+
+.card {
+  background-color: var(--very-dark-blue-card-bg);
+  border-radius: 15px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 350px;
+  height: 596px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 24px 24px 32px;
+  display: flex;
+  box-shadow: 0 25px 50px #0000001a;
+}
+
+.card-link {
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  font-family: Outfit, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+.card-link:hover {
+  color: var(--cyan);
+}
+
+.card-body-text {
+  color: var(--soft-blue);
+  margin-bottom: 24px;
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.card-data-wrapper {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.price-text {
+  color: #00fff8;
+  -webkit-text-stroke-color: var(--cyan);
+  font-family: Outfit, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.caption-text {
+  color: var(--soft-blue);
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.divider {
+  background-color: var(--very-dark-blue-line);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+.author-info-wrapper {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.author-image {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 33px;
+  margin-right: 16px;
+}
+
+.price-wrapper {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.days-left-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.body {
+  font-family: Outfit, sans-serif;
+}
+
+.caption-image {
+  margin-right: 6.5px;
+}
+
+.card-image {
+  opacity: 1;
+  background-image: url('../images/image-equilibrium.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  border-radius: 8px;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.card-overlay-image {
+  z-index: 1;
+  background-color: var(--cyan-50-3-transparency);
+  opacity: 0;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
+  display: flex;
+  position: absolute;
+}
+
+.card-overlay-image:hover {
+  opacity: 100;
+}
+
+.overlay-icon {
+  opacity: 1;
+}
+
+.creator-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+.creator-link:hover {
+  color: var(--cyan);
+}
+
+@media screen and (max-width: 479px) {
+  .card {
+    width: 327px;
+    height: 543px;
+  }
+}
+
+
